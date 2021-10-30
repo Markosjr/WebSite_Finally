@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lan="pt-br">
+    <head>
+        <title>CyberCode</title>
+        <meta charset="utf-8">
+        <meta name="description" content="site da CyberCode">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="imagens/icone.png">
+
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/animate.css">
+    </head> 
+    <body>
+        <header>
+            <a href="index.html" title="Página inicial">
+                <img src="imagens/logo.png" alt="CyberCode" class="wow fadeInDown">
+
+            </a>
+
+            <a href="javascript:mostrarmenu()"title="Menu" class="menu">
+                <i class="fas fa-bars"></i>
+
+            </a>
+
+            <nav class="wow fadeInDown">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home"> Home </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" title="Sobre"> Sobre</a>
+                    </li>
+                    <li>
+                        <a href="solucoes.html" title="Soluções"> Soluções </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato" > Contato </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main class="top">
+            <div class="container">
+                <h1>Contato</h1>
+                <form name="form1" method="get" action="#">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" maxlength="30"
+                    autocomplete="off" class="form"> 
+                    <br>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" class="form">
+                    <br>
+                    <label for="telefone"></label>
+                    <input type="numeric" name="telefone" id="telefone" placeholder="Telefone com DDD"
+                    autocomplete="off"  required inputmode="numeric">
+                    <br>
+                    <label for="mensagem"></label> 
+                    <textarea name="mensagem" id="mensagem" rows="10" required placeholder="Digite sua mensagem"></textarea>
+                       
+                    </textarea> 
+
+                    <button type="submit" class="botao">Enviar</button>
+
+
+
+                
+
+
+                <h1>Localização</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2576.4710637424305!2d-52.3851953311956!3d-24.042335718396977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf00426b2501f03e9!2sViptech!5e0!3m2!1spt-BR!2sbr!4v1634424413443!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Desenvolvido por Marcos Martins dos Santos Junior </p>
+            <p> VipTech Programming</p>
+            <p>Av. Comendador Norberto Marcondes,1054, Campo Mourão -PR</p>
+            <p>
+                <a href="" title="Facebook">
+                    <i class= " social fab fa-facebook-f"></i>
+                </a>
+                <a href="" title="Instagram">
+                    <i class=" social fab fa-instagram"></i>
+                </a>
+                <a href="" title="Twitter">
+                    <i class=" social fab fa-twitter"></i>
+                </a>
+                <a href="" title="Youtube">
+                    <i class=" social fab fa-youtube"></i>
+                </a>
+
+            </p>
+
+        </footer>
+
+
+        <script src="js/wow.min.js"></script>
+        <script>
+            new  WOW().init();
+        </script>
+
+        <script>
+            function mostrarmenu() {
+                document.querySelector("header nav").classList.toggle("show");
+            }
+        </script>
+        
+    </body>
+    
+</html>

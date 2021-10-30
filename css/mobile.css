@@ -1,0 +1,48 @@
+@media (max-width: 480px){
+    header img {
+        width: 300px;
+    }
+    .menu {
+        margin-top: 0;
+        display: block;
+    }
+    header {
+        display: inline-block;
+        box-sizing: border-box;
+        width:100%;
+    }
+    header nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        
+    }
+
+    header nav {
+        width: 100%;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .banner {
+        height: 500px;
+        background-position: center;
+    }
+
+    .banner h2{
+        font-size: 2em;
+    }
+
+    .container {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    
+}
